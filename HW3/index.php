@@ -56,9 +56,7 @@ class ValueObject {
     {
         if ($this->valueRed == $objectNumber->getRed($objectNumber->valueRed) && $this->valueGreen == $objectNumber->getGreen($objectNumber->valueGreen) && $this->valueBlue == $objectNumber->getBlue($objectNumber->valueBlue)) {
             return true;
-        } else {
-            return false;
-        }
+        } else return false;
     }
 
     public static function random(): ValueObject
