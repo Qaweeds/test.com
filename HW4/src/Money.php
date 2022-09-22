@@ -22,10 +22,6 @@ class Money {
         return $this->amount;
     }
 
-   /* public function getCurrency(Currency $objectMoney) {
-        return $objectMoney->getCurrency($objectMoney);
-    }*/
-
     public function equals(Money $objectMoney): bool
     {
         if ($this->currency == $objectMoney->currency && $this->amount == $objectMoney->getAmount($objectMoney->amount)) {
