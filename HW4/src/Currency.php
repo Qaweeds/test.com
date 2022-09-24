@@ -3,6 +3,17 @@
 namespace Test\HW4\Source;
 
 class Currency {
+
+    const CURRENCY=[
+        'UAH',
+        'USD',
+        'EUR',
+        'GBP',
+        'JPY',
+        'CHF',
+        'CNY'
+    ];
+
     private $isoCode;
 
     public function __construct($isoCode) {
@@ -10,16 +21,7 @@ class Currency {
     }
 
     private function validate($isoCode) {
-        $currency=[
-            'UAH',
-            'USD',
-            'EUR',
-            'GBP',
-            'JPY',
-            'CHF',
-            'CNY'
-        ];
-        if (!in_array($isoCode, $currency)){
+        if (!in_array($isoCode, self::CURRENCY)){
             throw new InvalidArgumentException('Невірно вказано формат валюти');
         }
     }
@@ -36,7 +38,7 @@ class Currency {
 
     public function equals(Currency $objectCurrency): bool
     {
-        if ($this->isoCode == $objectCurrency->getCurrency($objectCurrency->isoCode)) {
+        if ($this->isoCode == $objectCurrency->getCurrency()) {
             return true;
         } else return false;
     }

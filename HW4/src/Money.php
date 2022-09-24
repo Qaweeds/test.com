@@ -9,7 +9,6 @@ class Money {
     public function __construct(int|float $amount, Currency $currency) {
         $this->setAmount($amount);
         $this->currency=$currency;
-        $this->currency->getCurrency();
     }
 
     private function setAmount(int|float $amount): void
@@ -31,7 +30,7 @@ class Money {
 
     public function add(Money $objectMoney): int|float
     {
-        if ($this->currency==$objectMoney->getCurrency($objectMoney->currency)) {
+        if ($this->currency->equals($objectMoney)) {
             return $sum=$this->amount + $objectMoney->getAmount($objectMoney->amount);
         } else {
             throw new InvalidArgumentException('Валюти відрізняються');
