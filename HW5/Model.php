@@ -19,7 +19,7 @@ abstract class Model
 
     public function __construct()
     {
-        $this->pdo =require_once __DIR__.'config/db.php';
+        $this->pdo = require_once 'config/db.php';
     }
 
     public static function find()
