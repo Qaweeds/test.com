@@ -1,0 +1,11 @@
+{
+  "autoload": {
+    "psr-4": {
+      "Test\\HW4\\Source\\": "src"
+    }
+  },
+  "require": {
+    "illuminate/database": "^9.31",
+    "illuminate/events": "^9.31"
+  }
+}
