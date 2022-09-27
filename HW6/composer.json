@@ -1,7 +1,7 @@
 {
   "autoload": {
     "psr-4": {
-      "Test\\HW4\\Source\\": "src"
+      "Test\\HW6\\Source\\": "src"
     }
   },
   "require": {
