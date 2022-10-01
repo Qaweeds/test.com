@@ -6,10 +6,10 @@ $capsule = new Capsule;
 
 $capsule->addConnection([
     'driver' => 'mysql',
-    'host' => '192.168.56.56',
+    'host' => 'localhost',
     'database' => 'homestead',
     'username' => 'homestead',
-    'password' => 'secret ',
+    'password' => 'secret',
     'charset' => 'utf8',
     'collation' => 'utf8_unicode_ci',
     'prefix' => '',
