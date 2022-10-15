@@ -6,11 +6,11 @@
     @include('partials.breadcrumbs',[
         'links'=> [
             [
-                'link'=>'/../HW7/public/',
+                'link'=>'/',
                 'name'=>'Home'
             ],
             [
-                'link'=>'/',
+                'link'=>'/tags',
                 'name'=>'Tags'
             ]
 ]

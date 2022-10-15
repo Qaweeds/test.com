@@ -6,7 +6,7 @@ require_once __DIR__.'/../../config/database.php';
 
 use Test\HW7\Source\Models\Category;
 
-if (!count($_GET)==0) {
+if (!empty($_POST)) {
     $category=Category::find($_GET['id']);
     $category->delete();
     header('Location: list-categories.php');

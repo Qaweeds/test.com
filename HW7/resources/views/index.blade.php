@@ -6,10 +6,10 @@
     @include('list', [
     'links' => [
         [
-            'link'=>'tags/list-tags.php',
+            'link'=>'/tags/list-tags.php',
             'name'=>'Tags'
         ], [
-            'link'=>'categories/list-categories.php',
+            'link'=>'/categories/list-categories.php',
             'name'=>'Categories'
         ]
 ]

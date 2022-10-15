@@ -6,7 +6,7 @@ require_once __DIR__.'/../../config/database.php';
 
 use Test\HW7\Source\Models\Tag;
 
-if (!count($_POST)==0) {
+if (!empty($_POST)) {
     $tag = new Tag();
     $tag->title=$_POST['title'];
     $tag->slug=$_POST['slug'];

@@ -4,11 +4,11 @@
     @include('partials.breadcrumbs',[
         'links'=> [
             [
-                'link'=>'/../HW7/public/',
+                'link'=>'/',
                 'name'=>'Home'
             ],
             [
-                'link'=>'/../HW7/public/tags/list-tags.php',
+                'link'=>'/tags/list-tags.php',
                 'name'=>'Tags'
             ],
             [
